@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gresik Web - Jasa pembuatan website profesional, cepat, responsif, dan SEO-friendly untuk UMKM hingga perusahaan di Gresik dan seluruh Indonesia. Mulai proyek Anda sekarang!">
+    <meta name="keywords" content="jasa pembuatan website gresik, gresik web, buat website gresik, website umkm gresik, web developer gresik, pembuatan web murah gresik">
+    <meta name="author" content="Gresik Web">
+    
+    <title>Gresik Web | Solusi Sistemasi Digital & Pembuatan Website Profesional</title>
+    
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons for clean, minimalist design -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Page Transition Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-bg-wipes">
+            <div class="wipe wipe-1"></div>
+            <div class="wipe wipe-2"></div>
+        </div>
+        <div class="loader-content">
+            <span class="loader-logo-icon">GW</span>
+            <span class="loader-logo-text">Gresik<span>Web</span></span>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo-area">
+                <img src="../GresikWeb Lanscape.png" alt="Gresik Web Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="logo-fallback" style="display: none;">
+                    <span class="logo-icon">GW</span>
+                    <span class="logo-text">Gresik<span>Web</span></span>
+                </div>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#produk" class="nav-link">Produk</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#kontak" class="nav-link">Kontak</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-cta">
+                <a href="https://wa.me/6288235697734?text=Halo%20Gresik%20Web%2C%20saya%20tertarik%20untuk%20memulai%20proyek%20pembuatan%20website." target="_blank" class="btn btn-primary btn-sm">Mulai Proyek</a>
+                <button class="mobile-nav-toggle" aria-label="Toggle Menu" id="menuToggle">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Subtle background graphics -->
+        <div class="hero-bg-shapes">
+            <!-- Historical Tower/Gate Silhouette (SVG) -->
+            <svg class="landmark-silhouette" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M400 150 L430 200 L415 200 L415 350 L460 380 L460 500 L340 500 L340 380 L385 350 L385 200 L370 200 Z" fill="rgba(0, 102, 255, 0.03)" />
+                <path d="M250 350 L270 370 L260 370 L260 500 L240 500 L240 370 L230 370 Z" fill="rgba(16, 185, 129, 0.02)" />
+                <path d="M550 320 L575 345 L565 345 L565 500 L535 500 L535 345 L525 345 Z" fill="rgba(16, 185, 129, 0.02)" />
+                <circle cx="200" cy="150" r="100" fill="rgba(0, 102, 255, 0.02)" filter="blur(50px)" />
+                <circle cx="600" cy="400" r="120" fill="rgba(16, 185, 129, 0.03)" filter="blur(60px)" />
+            </svg>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Jasa Pembuatan Website Gresik</span>
+                <h1 class="hero-title">Solusi sistemasi digital untuk perusahaan anda</h1>
+                <p class="hero-subtitle">Kami menciptakan website responsif, cepat, dan didesain khusus untuk pertumbuhan bisnis Anda, dari UMKM hingga perusahaan.</p>
+                <div class="hero-actions">
+                    <a href="https://wa.me/6288235697734?text=Halo%20Gresik%20Web%2C%20saya%20ingin%20konsultasi%20gratis%20mengenai%20pembuatan%20website%20untuk%20bisnis%20saya." target="_blank" class="btn btn-primary btn-lg">
+                        <i data-lucide="message-square" class="btn-icon"></i> Konsultasi Gratis Sekarang
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-mockup-wrapper">
+                <div class="mockup-container">
+                    <img src="hero-mockup.jpg" alt="Mockup Website Gresik Web" class="mockup-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan Section (Produk / Fitur) -->
+    <section id="produk" class="features-section reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Keunggulan Kami</span>
+                <h2 class="section-title">Keunggulan Website Gresik Web</h2>
+                <p class="section-subtitle">Setiap website yang kami bangun dirancang menggunakan standar kualitas global untuk menjamin kesuksesan digital Anda.</p>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Card 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i data-lucide="smartphone" class="feature-icon"></i>
+                    </div>
+                    <h3 class="feature-title">Responsif & Mobile-First</h3>
+                    <p class="feature-desc">Tampil sempurna dan profesional di semua ukuran layar mulai dari ponsel, tablet, hingga komputer desktop.</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i data-lucide="zap" class="feature-icon"></i>
+                    </div>
+                    <h3 class="feature-title">Cepat & SEO-Friendly</h3>
+                    <p class="feature-desc">Struktur kode bersih dan kecepatan loading optimal untuk membantu peringkat website Anda lebih tinggi di Google.</p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i data-lucide="shield-check" class="feature-icon"></i>
+                    </div>
+                    <h3 class="feature-title">Aman & Dapat Diandalkan</h3>
+                    <p class="feature-desc">Dilengkapi sertifikat SSL gratis untuk keamanan data pelanggan dan didukung hosting cloud berkinerja tinggi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alur Kerja Section (4 Langkah) -->
+    <section class="workflow-section reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Alur Kerja</span>
+                <h2 class="section-title">Proses 4 Langkah Mudah Kami</h2>
+                <p class="section-subtitle">Kolaborasi transparan dan terstruktur dari awal diskusi hingga website Anda sepenuhnya online.</p>
+            </div>
+            
+            <div class="workflow-grid">
+                <!-- Step 1 -->
+                <div class="workflow-card">
+                    <div class="workflow-num">01</div>
+                    <div class="workflow-icon-box">
+                        <i data-lucide="compass"></i>
+                    </div>
+                    <h3 class="workflow-title">Konsultasi & Strategi</h3>
+                    <p class="workflow-desc">Kami mendengarkan kebutuhan bisnis Anda dan memformulasikan solusi digital terbaik.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="workflow-card">
+                    <div class="workflow-num">02</div>
+                    <div class="workflow-icon-box">
+                        <i data-lucide="code-2"></i>
+                    </div>
+                    <h3 class="workflow-title">Desain & Pengembangan</h3>
+                    <p class="workflow-desc">Kami membuat prototipe desain visual dan mengembangkannya menjadi kode website yang kokoh.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="workflow-card">
+                    <div class="workflow-num">03</div>
+                    <div class="workflow-icon-box">
+                        <i data-lucide="check-square"></i>
+                    </div>
+                    <h3 class="workflow-title">Konten & Pengujian</h3>
+                    <p class="workflow-desc">Kami mengoptimalkan konten yang relevan dan menguji fungsi di berbagai browser & perangkat.</p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="workflow-card">
+                    <div class="workflow-num">04</div>
+                    <div class="workflow-icon-box">
+                        <i data-lucide="rocket"></i>
+                    </div>
+                    <h3 class="workflow-title">Peluncuran & Dukungan</h3>
+                    <p class="workflow-desc">Website Anda go-live di internet secara aman dengan dukungan pemeliharaan berkala dari kami.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Karya Kami</span>
+                <h2 class="section-title">Portofolio Proyek Unggulan</h2>
+                <p class="section-subtitle">Jelajahi berbagai sistem digital, marketplace, dan aplikasi web yang telah sukses kami kembangkan untuk klien kami.</p>
+            </div>
+            
+            <!-- Portfolio Filter Controls -->
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Semua Proyek</button>
+                <button class="filter-btn" data-filter="sistem">Sistem Industri</button>
+                <button class="filter-btn" data-filter="gudang">Manajemen Gudang</button>
+                <button class="filter-btn" data-filter="marketplace">Marketplace</button>
+                <button class="filter-btn" data-filter="company">Profil & Lainnya</button>
+            </div>
+            
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid" id="portfolioGrid">
+                
+                <!-- Item 1: MTC20 SBI -->
+                <div class="portfolio-item" data-category="sistem" data-project="mtc20">
+                    <div class="portfolio-image-wrapper">
+                        <img src="../sbi.jpg" alt="MTC20 - SBI" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-view-btn">Lihat Detail <i data-lucide="arrow-up-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-cat">Sistem Industri</span>
+                        <h3 class="portfolio-title">MTC20 - SBI</h3>
+                        <p class="portfolio-short">Aplikasi manajemen maintenance dan data teknis terintegrasi dalam lingkungan industri Solusi Bangun Indonesia.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2: shell check -->
+                <div class="portfolio-item" data-category="sistem" data-project="shell">
+                    <div class="portfolio-image-wrapper">
+                        <img src="../shell.webp" alt="M3S Shell App Checksheet" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-view-btn">Lihat Detail <i data-lucide="arrow-up-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-cat">Sistem Industri</span>
+                        <h3 class="portfolio-title">M3S - Marunda Shell</h3>
+                        <p class="portfolio-short">Aplikasi checksheet report, logbook, dan equipment repair untuk manajemen komponen shell di lingkungan kerja.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3: Awan Jaya -->
+                <div class="portfolio-item" data-category="gudang" data-project="awanjaya">
+                    <div class="portfolio-image-wrapper">
+                        <img src="../awan.png" alt="Awan Jaya - Gudang" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-view-btn">Lihat Detail <i data-lucide="arrow-up-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-cat">Manajemen Gudang</span>
+                        <h3 class="portfolio-title">Awan Jaya</h3>
+                        <p class="portfolio-short">Sistem manajemen gudang yang mempermudah stok barang, balancing material, transaksi, dan refaksi pelanggan.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4: Freezy AC -->
+                <div class="portfolio-item" data-category="marketplace" data-project="freezy">
+                    <div class="portfolio-image-wrapper">
+                        <div class="portfolio-placeholder">
+                            <i data-lucide="snowflake" class="placeholder-icon"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-view-btn">Lihat Detail <i data-lucide="arrow-up-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-cat">Marketplace</span>
+                        <h3 class="portfolio-title">Freezy AC</h3>
+                        <p class="portfolio-short">Platform e-commerce suku cadang AC sekaligus marketplace pemesanan teknisi perawatan & perbaikan AC AC.</p>
+                    </div>
+                </div>
+
+                <!-- Item 5: HIPAM Digital -->
+                <div class="portfolio-item" data-category="company" data-project="hipam">
+                    <div class="portfolio-image-wrapper">
+                        <div class="portfolio-placeholder">
+                            <i data-lucide="droplet" class="placeholder-icon"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-view-btn">Lihat Detail <i data-lucide="arrow-up-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-cat">Profil & Lainnya</span>
+                        <h3 class="portfolio-title">HIPAM Digital</h3>
+                        <p class="portfolio-short">Platform administrasi terintegrasi untuk Himpunan Penduduk Pemakai Air Minum guna mempermudah pelaporan.</p>
+                    </div>
+                </div>
+
+                <!-- Item 6: HaloTernak -->
+                <div class="portfolio-item" data-category="marketplace" data-project="haloternak">
+                    <div class="portfolio-image-wrapper">
+                        <div class="portfolio-placeholder">
+                            <i data-lucide="dog" class="placeholder-icon"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-view-btn">Lihat Detail <i data-lucide="arrow-up-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-cat">Marketplace</span>
+                        <h3 class="portfolio-title">HaloTernak</h3>
+                        <p class="portfolio-short">Aplikasi pemesanan dokter hewan, manajemen kandang, dan edukasi bagi peternak & publik.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Detail Modal -->
+    <div class="portfolio-modal" id="portfolioModal">
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose"><i data-lucide="x"></i></button>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic Content Injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">FAQ</span>
+                <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+                <p class="section-subtitle">Temukan jawaban atas pertanyaan umum mengenai layanan pembuatan website kami.</p>
+            </div>
+            
+            <div class="faq-accordion">
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Apakah saya bisa mengelola konten website sendiri setelah selesai?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Tentu saja. Kami mengintegrasikan Sistem Manajemen Konten (CMS) yang ramah pengguna. Anda akan mendapatkan akses ke panel admin untuk mengedit teks, memperbarui foto, atau menambahkan produk baru dengan mudah tanpa harus memahami kode pemrograman. Kami juga menyediakan panduan singkat untuk membantu Anda.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Apakah harga yang ditawarkan sudah termasuk domain dan hosting?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Ya, untuk setiap paket pembuatan website baru, kami sudah menyertakan pendaftaran nama domain (seperti .com, .id, atau .co.id) serta konfigurasi cloud hosting berkinerja tinggi secara gratis untuk tahun pertama. Perpanjangan di tahun berikutnya akan dikenakan biaya tahunan hosting dan domain yang sangat terjangkau.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Apakah website buatan Gresik Web ramah SEO dan cepat diakses?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Ya, kami membangun website dengan standar performa tinggi, menggunakan kode yang bersih dan optimasi gambar agar website memuat dengan sangat cepat. Selain itu, kami menerapkan struktur ramah SEO (Search Engine Optimization) dasar seperti pengaturan Meta Tags, Sitemap XML, dan SSL (HTTPS) agar website Anda lebih mudah bersaing di Google.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Bagaimana dengan dukungan dan pemeliharaan setelah website go-live?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Kami tidak melepas tangan setelah website Anda online. Gresik Web menyediakan layanan dukungan teknis pasca-peluncuran berupa garansi perbaikan jika ada error/bug, pemeliharaan sistem keamanan secara berkala, serta backup data rutin sesuai paket layanan yang Anda pilih agar website Anda tetap beroperasi 24/7 tanpa kendala.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Dokumen apa saja yang diperlukan untuk membuat website?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Tidak ada dokumen khusus yang dibutuhkan untuk pembuatan website, kecuali perusahaan anda bergerak dibidang tertentu yang mengharuskan penyertaan dokumen seperti tertera pada kebijakan privasi kami.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Apakah saya bisa mengajukan revisi jika website tidak sesuai dengan kebutuhan?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Ya, anda dapat mengajukan revisi sebelum anda benar-benar menerima username dan password website. Jika anda sudah menerima username dan password, revisi dapat kami lakukan selama tidak merubah fungsi dan tampilan yang kompleks. Jika revisi dikarenakan bug, maka kami akan memperbaiki tanpa biaya apapun.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-banner-section reveal">
+        <div class="container">
+            <div class="cta-banner-card">
+                <div class="cta-banner-content">
+                    <h2>Siap Membawa Bisnis Anda ke Level Berikutnya?</h2>
+                    <p>Diskusikan ide proyek Anda dengan tim developer berpengalaman kami secara gratis hari ini.</p>
+                </div>
+                <div class="cta-banner-btn">
+                    <a href="https://wa.me/6288235697734?text=Halo%20Gresik%20Web%2C%20saya%20ingin%20berdiskusi%20mengenai%20pembuatan%20website%20baru." target="_blank" class="btn btn-accent btn-lg">
+                        Hubungi WhatsApp Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak" class="main-footer">
+        <div class="container footer-container">
+            
+            <div class="footer-brand-column">
+                <a href="#" class="footer-logo">
+                    <img src="../GresikWeb Lanscape.png" alt="Gresik Web Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-fallback" style="display: none;">
+                        <span class="logo-icon">GW</span>
+                        <span class="logo-text">Gresik<span>Web</span></span>
+                    </div>
+                </a>
+                <p class="footer-desc">Jasa pembuatan website profesional terpercaya. Kami membantu transformasi digital UMKM dan korporasi dengan solusi website cepat, responsif, dan bernilai tinggi.</p>
+                <div class="social-links">
+                    <a href="https://instagram.com/gresikweb" target="_blank" class="social-link" aria-label="Instagram">
+                        <i data-lucide="instagram"></i> @gresikweb
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-links-column">
+                <h4 class="footer-heading">Navigasi</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#produk">Produk & Layanan</a></li>
+                    <li><a href="#portfolio">Portfolio Proyek</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact-column">
+                <h4 class="footer-heading">Kontak Kami</h4>
+                <ul class="footer-contacts">
+                    <li>
+                        <i data-lucide="map-pin" class="contact-icon"></i>
+                        <span>Kabupaten Gresik, Jawa Timur, Indonesia</span>
+                    </li>
+                    <li>
+                        <i data-lucide="phone" class="contact-icon"></i>
+                        <a href="https://wa.me/6288235697734" target="_blank">0882-3569-7734</a>
+                    </li>
+                    <li>
+                        <i data-lucide="mail" class="contact-icon"></i>
+                        <a href="mailto:info@gresikweb.com">info@gresikweb.com</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Gresik Web. Hak Cipta Dilindungi Undang-Undang. Didesain secara lokal di Gresik, Indonesia.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
